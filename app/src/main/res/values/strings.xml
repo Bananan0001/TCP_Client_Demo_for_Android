@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TCP窗口助手</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="text2">请输入端口</string>
+    <string name="text1">请输入地址</string>
+    <string name="text3">这里是需要传输的数据</string>
+    <string name="text5">选择发送方式：</string>
+    <string name="hex">Hex</string>
+    <string name="text6">字符串</string>
+    <string name="text7">发送</string>
+    <string name="text4">Hex</string>
+    <string name="text8">选择显示方式：</string>
+</resources>

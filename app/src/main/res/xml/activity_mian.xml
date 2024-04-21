@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="6"
+    android:orientation="horizontal"
+    android:rowCount="10"
+    >
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill"
+        android:digits="1234567890."
+        android:hint="@string/text1" />
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_columnSpan="1"
+
+        android:digits="1234567890"
+        android:hint="@string/text2"/>
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="203dp"
+        android:layout_columnSpan="3"
+        android:text="@string/disconnect" />
+
+    <EditText
+        android:id="@+id/EditText3"
+        android:layout_columnSpan="6"
+        android:layout_gravity="fill"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/text3"/>
+    <TextView
+        android:id="@+id/TextView2"
+        android:textSize="20sp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text5"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_columnSpan="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/hex" />
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text6" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_columnSpan="6"
+        android:layout_gravity="fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text7" />
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:textSize="20sp"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text8"/>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_columnSpan="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/text4" />
+        <RadioButton
+            android:id="@+id/btn4"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text6" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_columnSpan="6"
+        android:layout_gravity="fill"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:scrollbars="vertical"
+        android:text="" />
+</GridLayout >
