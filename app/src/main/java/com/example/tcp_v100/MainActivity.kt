@@ -136,17 +136,19 @@ class MainActivity : ComponentActivity() {
             while(indeta==1){
                 try {
                     if(ONandOFF==0){
-                        var reader: InputStream? =null
-                        reader=socket.getInputStream()
+                        var reader = socket.getInputStream()
                         if (reader != null) {
                             msg_len = reader.read(msg)
                         }
-                        var deta = String(msg,0,msg_len)
+                        var neomsg = Array<Byte>(msg_len){ 0 }.toByteArray()
+                        for (i in 0 until msg_len){
+                            neomsg[i]=msg[i]
+                        }
                         if (RG2 == 1){
-                            val hexArray = stringToHexArray(deta)
-                            Logdata = Time()+"收--->"+hexArray.joinToString(" "){ "%02x".format(it) }+"\n"+Logdata
-                            Log.e("debugLog", "数据接收成功(Hex)："+hexArray.joinToString(" "){ "%02x".format(it) })
+                            Logdata = Time()+"收--->"+neomsg.joinToString(" "){ "%02x".format(it) }+"\n"+Logdata
+                            Log.e("debugLog", "数据接收成功(Hex)："+neomsg.joinToString(" "){ "%02x".format(it) })
                         }else {
+                            var deta = String(msg,0,msg_len)
                             Log.e("debugLog", "数据接收成功(字符串)："+deta)
                             Logdata = Time()+"收--->"+deta+"\n"+Logdata
                         }
